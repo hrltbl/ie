@@ -1,0 +1,141 @@
+body {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(135deg, #f06, #39f, #f06);
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+    color: #f06;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .container {
+    width: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #39f;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  input {
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #404040;
+    padding: 10px;
+    color: #404040;
+    font-size: 16px;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-bottom-color: #39f;
+    outline: none;
+  }
+  
+  button {
+    background-color: #39f;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif;
+    transition: background-color 0.3s ease;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  button:hover {
+    background-color: #399;
+  }
+  
+  #results {
+    display: none;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+  }
+  
+  .game {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .game h3 {
+    font-size: 24px;
+    color: #39f;
+    margin-bottom: 5px;
+  }
+  
+  .game p {
+    font-size: 18px;
+    color: #404040;
+  }
+  
+  .game a {
+    background-color: #39f;
+    color: #ffffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .game:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #404040;
+    border-color: rgba(255, 255, 255, 0.95);
+    transform: scale(1.03);
+  }
+  
+  .game:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .game:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.92);
+  }
+  
